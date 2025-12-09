@@ -1,0 +1,180 @@
+* {
+  font-family: "JetBrains Mono NerdFont";
+  font-size: 13px;
+}
+
+.control-center {
+  background: rgba(10, 10, 15, 0.95);
+  border: 1px solid rgba(123, 44, 191, 0.4);
+  border-radius: 14px;
+}
+
+.notification-row {
+  outline: none;
+}
+
+.notification {
+  background: rgba(20, 20, 25, 0.95);
+  border: 1px solid rgba(123, 44, 191, 0.3);
+  border-radius: 10px;
+  margin: 6px;
+  padding: 0;
+}
+
+.notification-content {
+  padding: 10px;
+}
+
+.notification-default-action {
+  border-radius: 10px;
+}
+
+.close-button {
+  background: rgba(244, 63, 94, 0.2);
+  border-radius: 6px;
+  color: #f43f5e;
+  margin: 6px;
+  padding: 4px;
+}
+
+.close-button:hover {
+  background: rgba(244, 63, 94, 0.4);
+}
+
+.notification-action {
+  background: rgba(123, 44, 191, 0.2);
+  border-radius: 6px;
+  color: #fff;
+  margin: 4px;
+  padding: 6px;
+}
+
+.notification-action:hover {
+  background: rgba(123, 44, 191, 0.4);
+}
+
+.summary {
+  color: #fff;
+  font-weight: bold;
+}
+
+.body {
+  color: #a0a0a0;
+}
+
+.time {
+  color: #707070;
+  font-size: 11px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.widget-title {
+  color: #7b2cbf;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.widget-title > button {
+  background: rgba(244, 63, 94, 0.2);
+  border-radius: 6px;
+  color: #f43f5e;
+  padding: 4px 10px;
+}
+
+.widget-title > button:hover {
+  background: rgba(244, 63, 94, 0.4);
+}
+
+.widget-dnd {
+  background: rgba(20, 20, 25, 0.95);
+  border-radius: 10px;
+  margin: 6px;
+  padding: 10px;
+}
+
+.widget-dnd > switch {
+  background: rgba(50, 50, 55, 0.8);
+  border-radius: 10px;
+}
+
+.widget-dnd > switch:checked {
+  background: rgba(123, 44, 191, 0.6);
+}
+
+.widget-dnd > switch slider {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.widget-mpris {
+  background: rgba(20, 20, 25, 0.95);
+  border-radius: 10px;
+  margin: 6px;
+  padding: 10px;
+}
+
+.widget-mpris-player {
+  padding: 6px;
+}
+
+.widget-mpris-title {
+  color: #fff;
+  font-weight: bold;
+}
+
+.widget-mpris-subtitle {
+  color: #a0a0a0;
+}
+
+.widget-buttons-grid {
+  background: rgba(20, 20, 25, 0.95);
+  border-radius: 10px;
+  margin: 6px;
+  padding: 10px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  background: rgba(123, 44, 191, 0.2);
+  border-radius: 8px;
+  color: #7b2cbf;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  background: rgba(123, 44, 191, 0.4);
+}
+
+.widget-volume {
+  background: rgba(20, 20, 25, 0.95);
+  border-radius: 10px;
+  margin: 6px;
+  padding: 10px;
+}
+
+.widget-backlight {
+  background: rgba(20, 20, 25, 0.95);
+  border-radius: 10px;
+  margin: 6px;
+  padding: 10px;
+}
+
+scale trough {
+  background: rgba(50, 50, 55, 0.8);
+  border-radius: 10px;
+  min-height: 8px;
+}
+
+scale highlight {
+  background: rgba(123, 44, 191, 0.6);
+  border-radius: 10px;
+}
+
+scale slider {
+  background: #7b2cbf;
+  border-radius: 50%;
+}

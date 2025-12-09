@@ -1,0 +1,81 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$rust\
+$cmd_duration\
+$line_break\
+$character"""
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[✗](red)"
+
+[username]
+format = "[$user]($style)"
+style_user = "bold purple"
+show_always = true
+
+[hostname]
+format = "[@$hostname]($style) "
+style = "bold purple"
+ssh_only = false
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold white"
+read_only = " 󰌾"
+read_only_style = "red"
+truncation_length = 4
+truncate_to_repo = true
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "bold purple"
+symbol = " "
+
+[git_status]
+format = "([$all_status$ahead_behind]($style)) "
+style = "purple"
+conflicted = "="
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+stashed = "*${count}"
+modified = "!${count}"
+staged = "+${count}"
+deleted = "-${count}"
+
+[nodejs]
+format = "[$symbol($version)]($style) "
+style = "green"
+symbol = "󰎙 "
+
+[python]
+format = "[$symbol($version)]($style) "
+style = "yellow"
+symbol = " "
+
+[rust]
+format = "[$symbol($version)]($style) "
+style = "red"
+symbol = "󱘗 "
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "bold yellow"
+min_time = 2_000
+
+[line_break]
+disabled = false
+
+[time]
+format = "[$time]($style) "
+style = "white"
+disabled = true
+time_format = "%H:%M"

@@ -1,0 +1,145 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "margin-top": 8,
+  "margin-left": 12,
+  "margin-right": 12,
+  "modules-left": ["custom/logo", "clock", "hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "tray",
+    "temperature",
+    "memory",
+    "cpu",
+    "pulseaudio",
+    "bluetooth",
+    "battery",
+    "network",
+    "custom/notification",
+    "custom/powermenu"
+  ],
+  "custom/logo": {
+    "format": "󰣇",
+    "tooltip": false,
+    "on-click": "wofi --show drun"
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "󰸗 {:%H:%M}",
+    "format-alt": "󰃭 {:%A, %d %B %Y}",
+    "interval": 60,
+    "tooltip": true,
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "separate-outputs": false,
+    "active-only": false,
+    "all-outputs": false,
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十",
+      "11": "一",
+      "12": "二",
+      "13": "三",
+      "14": "四",
+      "15": "五",
+      "16": "六",
+      "17": "七",
+      "18": "八",
+      "19": "九",
+      "20": "十"
+    }
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50,
+    "rewrite": {
+      "(.*) — Mozilla Firefox": "󰈹 $1",
+      "(.*) - Visual Studio Code": "󰨞 $1",
+      "(.*) - Discord": "󰙯 $1",
+      "(.*) - Spotify": "󰓇 $1",
+      "kitty": " Terminal",
+      "thunar": "󰉋 Files",
+      "(.*)": "$1"
+    }
+  },
+  "network": {
+    "format-wifi": "󰖩",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+    "tooltip-format-wifi": "{essid} | {ipaddr}",
+    "tooltip-format-ethernet": "{ifname} | {ipaddr}",
+    "on-click": "nm-connection-editor",
+    "interval": 2
+  },
+  "temperature": {
+    "format": "󰔏 {temperatureC}°C",
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80
+  },
+  "memory": {
+    "format": "󰫗 {}%",
+    "tooltip-format": "RAM: {used:0.1f}GB / {total:0.1f}GB",
+    "interval": 5,
+    "on-click": "kitty -e btop"
+  },
+  "cpu": {
+    "format": "󰻠 {usage}%",
+    "tooltip-format": "CPU: {avg_frequency}GHz",
+    "interval": 5,
+    "on-click": "kitty -e btop"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 muted",
+    "format-icons": {
+      "headphone": "󰋋",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+  "bluetooth": {
+    "format": "󰂯",
+    "format-connected": "󰂱 {num_connections}",
+    "format-disabled": "󰂲",
+    "tooltip-format": "{status}\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "on-click": "blueman-manager"
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+  "custom/notification": {
+    "format": "󰂚",
+    "tooltip": false,
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -C"
+  },
+  "custom/powermenu": {
+    "format": "󰐥",
+    "tooltip": false,
+    "on-click": "wlogout -p layer-shell"
+  }
+}

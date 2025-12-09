@@ -1,0 +1,15 @@
+show=drun
+prompt=
+width=22%
+height=32%
+always_parse_args=true
+show_all=true
+print_command=true
+layer=overlay
+allow_images=true
+image_size=28
+insensitive=true
+hide_scroll=true
+no_actions=true
+matching=fuzzy
+columns=1

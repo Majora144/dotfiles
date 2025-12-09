@@ -1,0 +1,36 @@
+gui:
+  theme:
+    activeBorderColor:
+      - "#7b2cbf"
+      - bold
+    inactiveBorderColor:
+      - "#3a3a4a"
+    optionsTextColor:
+      - "#7b2cbf"
+    selectedLineBgColor:
+      - "#2a2a3a"
+    selectedRangeBgColor:
+      - "#2a2a3a"
+    cherryPickedCommitBgColor:
+      - "#5a189a"
+    cherryPickedCommitFgColor:
+      - "#ffffff"
+    unstagedChangesColor:
+      - "#f97583"
+    defaultFgColor:
+      - "#a0a0a0"
+    searchingActiveBorderColor:
+      - "#e5c07b"
+  showIcons: true
+  border: rounded
+  mouseEvents: true
+  skipDiscardChangeWarning: false
+  showBottomLine: true
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
+keybinding:
+  universal:
+    quit: q
+    quit-alt1: <c-c>

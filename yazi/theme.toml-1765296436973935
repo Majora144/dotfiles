@@ -1,0 +1,86 @@
+[manager]
+cwd = { fg = "#7b2cbf" }
+hovered = { fg = "#ffffff", bg = "#7b2cbf" }
+preview_hovered = { underline = true }
+find_keyword = { fg = "#e5c07b", bold = true }
+find_position = { fg = "#7b2cbf", bg = "reset", bold = true }
+marker_copied = { fg = "#85e89d", bg = "#85e89d" }
+marker_cut = { fg = "#f97583", bg = "#f97583" }
+marker_selected = { fg = "#7b2cbf", bg = "#7b2cbf" }
+tab_active = { fg = "#ffffff", bg = "#7b2cbf" }
+tab_inactive = { fg = "#a0a0a0", bg = "#1a1a1a" }
+tab_width = 1
+border_symbol = "│"
+border_style = { fg = "#3a3a4a" }
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#7b2cbf", bg = "#1a1a1a" }
+mode_normal = { fg = "#0a0a0f", bg = "#7b2cbf", bold = true }
+mode_select = { fg = "#0a0a0f", bg = "#e5c07b", bold = true }
+mode_unset = { fg = "#0a0a0f", bg = "#f97583", bold = true }
+progress_label = { fg = "#ffffff", bold = true }
+progress_normal = { fg = "#7b2cbf", bg = "#1a1a1a" }
+progress_error = { fg = "#f97583", bg = "#1a1a1a" }
+permissions_t = { fg = "#7b2cbf" }
+permissions_r = { fg = "#e5c07b" }
+permissions_w = { fg = "#f97583" }
+permissions_x = { fg = "#85e89d" }
+permissions_s = { fg = "#a0a0a0" }
+
+[input]
+border = { fg = "#7b2cbf" }
+title = {}
+value = {}
+selected = { reversed = true }
+
+[select]
+border = { fg = "#7b2cbf" }
+active = { fg = "#7b2cbf" }
+inactive = {}
+
+[tasks]
+border = { fg = "#7b2cbf" }
+title = {}
+hovered = { underline = true }
+
+[which]
+mask = { bg = "#0a0a0f" }
+cand = { fg = "#7b2cbf" }
+rest = { fg = "#505050" }
+desc = { fg = "#a0a0a0" }
+separator = " → "
+separator_style = { fg = "#3a3a4a" }
+
+[help]
+on = { fg = "#7b2cbf" }
+run = { fg = "#a0a0a0" }
+desc = { fg = "#505050" }
+hovered = { bg = "#7b2cbf", bold = true }
+footer = { fg = "#a0a0a0", bg = "#0a0a0f" }
+
+[filetype]
+rules = [
+    { mime = "image/*", fg = "#9d4edd" },
+    { mime = "video/*", fg = "#e5c07b" },
+    { mime = "audio/*", fg = "#85e89d" },
+    { mime = "application/zip", fg = "#f97583" },
+    { mime = "application/x-tar", fg = "#f97583" },
+    { mime = "application/pdf", fg = "#f97583" },
+    { name = "*.md", fg = "#79b8ff" },
+    { name = "*.json", fg = "#e5c07b" },
+    { name = "*.toml", fg = "#e5c07b" },
+    { name = "*.yaml", fg = "#e5c07b" },
+    { name = "*.lua", fg = "#79b8ff" },
+    { name = "*.sh", fg = "#85e89d" },
+    { name = "*.py", fg = "#e5c07b" },
+    { name = "*.js", fg = "#e5c07b" },
+    { name = "*.ts", fg = "#79b8ff" },
+    { name = "*.rs", fg = "#f97583" },
+    { name = "*.go", fg = "#79b8ff" },
+    { name = "*.c", fg = "#79b8ff" },
+    { name = "*.cpp", fg = "#79b8ff" },
+    { name = "*", fg = "#a0a0a0" },
+    { name = "*/", fg = "#7b2cbf" }
+]
